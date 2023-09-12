@@ -1,4 +1,4 @@
-Algoritmo Calculadora_Basica
+Algoritmo CalculoBasico
 	Definir NumX, NumY, Suma Como Real
 	Escribir  "> Ingresar El Primer Numero: "
 	Leer NumX
