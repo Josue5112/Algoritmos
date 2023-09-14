@@ -1,6 +1,11 @@
 Algoritmo Variables
+	// Definiciones
+	//==================================================================//
 	Definir Nombre, Apellidos Como Caracter
 	Definir Pago1, Pago2, Total, Impuestos, PagoNeto Como Real
+	//==================================================================//
+	// Variables
+	//==================================================================//
 	Nombre = "Josue"
 	Apellidos = "Cristobal Villanueva"
 	Pago1 = 2500
@@ -8,6 +13,9 @@ Algoritmo Variables
 	Total = Pago1 + Pago2
 	Impuestos = Total * 0.08
 	PagoNeto = Total - Impuestos
+	//==================================================================//
+	// Mostrar Resultados
+	//==================================================================//
 	Escribir "Tu eres: " Nombre " " Apellidos
 	Escribir "Tu primer pago fue: " Pago1 " y tu segundo pago fue: " Pago2
 	Escribir "Tu pago total es: " Total
