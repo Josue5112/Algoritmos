@@ -20,10 +20,10 @@ Algoritmo Calcular_Sueldo
 	//==========================================//
 	// Mostrar Resultados
 	//==========================================//
-	Escribir "Tu Sueldo Bruto Es: " SueldoBruto
+	Escribir "Tu Sueldo Neto Es: " SueldoNeto
 	Escribir "Tus Impuestos Son: " Impuestos
 	Escribir "=========================="
-	Escribir "Tu Sueldo Neto Es: " SueldoNeto
+	Escribir "Tu Sueldo Bruto Es: " SueldoBruto
 	//==========================================//
 	
 FinAlgoritmo
