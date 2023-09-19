@@ -18,6 +18,8 @@ Algoritmo Calcular_Sueldo
 	//==========================================//
 	// Mostrar Resultados
 	//==========================================//
+	Escribir "Tus Horas de Trabajo Son: " Horas
+	Escribir "Tu Tarifa Por Tu Trabajo Es: " Tarifa
 	Escribir "Tu Sueldo Bruto Es: " SueldoBruto
 	Escribir "Tus Impuestos Son: " Impuestos
 	Escribir "=========================="
