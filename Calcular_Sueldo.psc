@@ -9,21 +9,20 @@ Algoritmo Calcular_Sueldo
 	Leer Horas
 	Escribir "Ingresar La Tarifa: "
 	Leer Tarifa
-	Escribir "Ingresar La Tasa: "
-	Leer Tasa
 	//==========================================//
 	// Calcular
 	//==========================================//
 	SueldoBruto = Horas*Tarifa
-	Impuestos = SueldoBruto*Tasa
+	Impuestos = SueldoBruto*0.8
 	SueldoNeto = SueldoBruto - Impuestos
 	//==========================================//
 	// Mostrar Resultados
 	//==========================================//
-	Escribir "Tu Sueldo Neto Es: " SueldoNeto
+	Escribir "Tu Sueldo Bruto Es: " SueldoBruto
 	Escribir "Tus Impuestos Son: " Impuestos
 	Escribir "=========================="
-	Escribir "Tu Sueldo Bruto Es: " SueldoBruto
+	Escribir "Tu Sueldo Neto Es: " SueldoNeto
 	//==========================================//
 	
 FinAlgoritmo
+
