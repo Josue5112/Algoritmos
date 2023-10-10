@@ -2,9 +2,9 @@ Algoritmo ITJORGEBONILLA
     Definir NomEstudiante, conFecha, fech,carrera, concepto como caracter
 	Definir multa,mensualidad, retraso, pagods, cuotads, monto, tiempo, PagoNeto,cuotamt Como Real
     Definir pago, cuota, DiasIngr,cuotas como Entero
-    Escribir "InstituciÛn Superior TecnolÛgico Jorge Bonilla"
+    Escribir "Instituci√≥n Superior Tecnol√≥gico Jorge Bonilla"
     Escribir "|=============================================|"
-    Escribir "SISTEMA DE PAGOS DE MATRÕCULAS Y PENSIONES"
+    Escribir "SISTEMA DE PAGOS DE MATR√çCULAS Y PENSIONES"
     Escribir "|=============================================|"
 	
 	Repetir
@@ -13,14 +13,14 @@ Algoritmo ITJORGEBONILLA
 	Hasta Que Longitud(NomEstudiante) > 0
 	
     Escribir "|=============================================|"
-    Escribir "øQuÈ carrera est·s estudiando?"
+    Escribir "¬øQu√© carrera est√°s estudiando?"
     Escribir "|=============================================|"
-    Escribir "[1] COMPUTACI”N E INFORM¡TICA"
+    Escribir "[1] COMPUTACI√ìN E INFORM√ÅTICA"
     Escribir "[2] SECRETARIA EJECUTIVA"
-    Escribir "[3] ADMINISTRACI”N"
+    Escribir "[3] ADMINISTRACI√ìN"
 	
     Repetir
-        Escribir "Poner el n˙mero de la carrera: " Sin Saltar
+        Escribir "Poner el n√∫mero de la carrera: " Sin Saltar
         Leer carrera
     Hasta Que carrera = "1" O carrera = "2" O carrera = "3"
 	
@@ -40,7 +40,7 @@ FinSi
 
 
 Escribir "|=============================================|"
-Escribir "øEst·s en el rango de la fecha permitida?"
+Escribir "¬øEst√°s en el rango de la fecha permitida?"
 Escribir "|=============================================|"
 Repetir
 	Escribir "Ingrese SI o NO: " Sin Saltar
@@ -50,26 +50,26 @@ Hasta Que fech = "SI" o fech = "NO"
 
 
 Escribir "|=============================================|"
-Escribir "øQuÈ concepto deseas pagar?"
+Escribir "¬øQu√© concepto deseas pagar?"
 Escribir "|=============================================|"
-Escribir "[1] SOLO MATRÕCULA"
-Escribir "[2] MATRÕCULA Y CUOTA"
-Escribir "[3] MATRÕCULA Y 2-4 CUOTAS"
+Escribir "[1] SOLO MATR√çCULA"
+Escribir "[2] MATR√çCULA Y CUOTA"
+Escribir "[3] MATR√çCULA Y 2-4 CUOTAS"
 Escribir "[4] TODO EL SEMESTRE (INCLUIDA MATRICULA)"
 Escribir "[5] TODA LA CARRERA"
 Repetir
-	Escribir "Poner el n˙mero del concepto: " Sin Saltar
+	Escribir "Poner el n√∫mero del concepto: " Sin Saltar
 	Leer concepto
 Hasta Que concepto = "1" o concepto = "2" o concepto = "3" o concepto = "4" o concepto = "5"
 
 
 Si concepto = "1" Entonces
-	Titulo = "SOLO MATRÕCULA"
+	Titulo = "SOLO MATR√çCULA"
 	pago = pago
 	cuota = 0
 Sino 
 	Si concepto = "2" Entonces
-		Titulo = "MATRÕCULA Y CUOTA"
+		Titulo = "MATR√çCULA Y CUOTA"
 		pago = pago
 		cuota = cuota
 	Sino 
@@ -78,7 +78,7 @@ Sino
 				Escribir "Cuantas Cuotas deceas pagar: "
 				Leer cuotas
 			Hasta Que cuotas = 2 o cuotas = 3 o cuotas = 4
-			Titulo = "MATRÕCULA Y 2-4 CUOTAS"
+			Titulo = "MATR√çCULA Y 2-4 CUOTAS"
 			pagods = pago*0.05
 			cuotads = (cuotas*cuota)*0.1
 			cuota = (cuotas*cuota) - cuotads
@@ -103,9 +103,10 @@ Sino
 	FinSi
 FinSi
 
-PagoNeto = pago+cuota
+
 
 Si fech = "SI" Entonces
+        PagoNeto = pago+cuota
 	Escribir "|=============================================|"
 	Escribir "Modelo De Pago: " Titulo
 	Escribir "|=============================================|"
@@ -116,7 +117,7 @@ Si fech = "SI" Entonces
 	
 Sino
 	FechaPer = "09/10/2023"
-			Escribir "El estudiante pasÛ la fecha permitida " FechaPer
+			Escribir "El estudiante pas√≥ la fecha permitida " FechaPer
 			Repetir
 			Escribir "Ingresar Dias De Retraso: " Sin Saltar
 				Leer DiasIngr
@@ -125,6 +126,7 @@ Sino
 			multa = DiasIngr * 0.01
 			cuotamt = cuota*multa
 			cuota = cuota+cuotamt
+                        PagoNeto = pago+cuota
 			Escribir "|=============================================|"
 			Escribir "Modelo De Pago: " Titulo
 			Escribir "|=============================================|"
